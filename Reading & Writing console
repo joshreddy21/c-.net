@@ -1,0 +1,54 @@
+************* 1. Create any value called EmpName and print that value in the output***************
+string EmpName = "John";
+Console.WriteLine(EmpName);
+
+ ************2. Declare a variable name of any datatype and read the name in the output**************
+Console.WriteLine("Enter your name:");
+string name = Console.ReadLine();
+Console.WriteLine("Name entered: " + name);
+
+ *************3. Enter your name and from WriteLine function and print the output **************
+Console.Write("Enter your name: ");
+string enteredName = Console.ReadLine();
+Console.WriteLine("Entered Name: " + enteredName);
+
+ ***********4 . Declare a 2 strings as input and contacenate with another string with the both 
+ Strings and get Output
+ Ex: Input : enter firstname , enter lastname , "Hello" + firstname + lastname
+ Output: Hello firstname lastname*************
+Console.Write("Enter first name: ");
+string firstName = Console.ReadLine();
+
+Console.Write("Enter last name: ");
+string lastName = Console.ReadLine();
+
+string greeting = "Hello " + firstName + " " + lastName;
+Console.WriteLine(greeting);
+
+*************** 5. Write a program by taking two integer values and return the value by adding in the 
+ Output 
+ Ex: Input : 5,4
+ Output : 9************
+Console.Write("Enter the first integer: ");
+int num1 = int.Parse(Console.ReadLine());
+
+Console.Write("Enter the second integer: ");
+int num2 = int.Parse(Console.ReadLine());
+
+int sum = num1 + num2;
+Console.WriteLine("Sum: " + sum);
+
+************ 6. Write a program to enter password by converting it to char array into string print the
+ Output 
+ Ex: Input : enter password
+ Output : Password : 123**********
+Console.Write("Enter password: ");
+string passwordInput = Console.ReadLine();
+
+// Convert the password to a char array
+char[] passwordArray = passwordInput.ToCharArray();
+
+// Convert the char array back to a string for printing
+string password = new string(passwordArray);
+
+Console.WriteLine("Password: " + password);
