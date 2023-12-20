@@ -1,0 +1,42 @@
+********** 1. Declare a variable of data type int with name empID ***************
+int empID;
+
+****************2. Declare a variable of data type string with name empName  **************
+string empName;
+
+************3. Assign a value 5 for the empId variable and print the value of empId on console***************
+int empID = 5;
+Console.WriteLine("empID: " + empID);
+
+*********4. Assign a value "Puja" for the empName variable and print the value of empId on 
+console  **********
+string empName = "Puja";
+Console.WriteLine("empName: " + empName);
+
+**************5. Write a program to check whether it is odd or even 
+ Ex: Input - 2
+ Output - even*************
+int number = 2;
+if (number % 2 == 0)
+{
+    Console.WriteLine("even");
+}
+else
+{
+    Console.WriteLine("odd");
+}
+
+*************6. Write a program to swap 2 numbers 
+ Ex : Input - 22,65
+ Output - 65,22 **************
+int num1 = 22;
+int num2 = 65;
+
+Console.WriteLine($"Before swapping: num1 = {num1}, num2 = {num2}");
+
+// Swap logic
+int temp = num1;
+num1 = num2;
+num2 = temp;
+
+Console.WriteLine($"After swapping: num1 = {num1}, num2 = {num2}");
